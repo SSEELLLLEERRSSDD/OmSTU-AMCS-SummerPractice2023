@@ -1,7 +1,10 @@
+using System;
+using Xunit;
 using TechTalk.SpecFlow;
+using FluentAssertions;
 using SpaceBattle;
 
-namespace spacebattletests
+namespace SpaceBattleTests
 {
     [Binding]
     public class Перемещение_шатла
