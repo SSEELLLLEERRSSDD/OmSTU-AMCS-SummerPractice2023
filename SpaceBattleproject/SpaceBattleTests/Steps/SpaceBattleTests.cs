@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using TechTalk.SpecFlow;
 using FluentAssertions;
-using SpaceBattled;
+using SpaceBattle;
 
 namespace SpaceBattleTests
 {
