@@ -1,8 +1,8 @@
-name: spacebattleupdate
+name: spacebattle test
 
 on:
   push:
-    branches: ["SpaceBattleupdate"]
+    branches: ["zadanie_8"]
 
 jobs:
   build:
@@ -17,10 +17,10 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Restore dependencies
-        run: dotnet restore SpaceBattleproject/SpaceBattle
+        run: dotnet restore spacebattle
 
       - name: Test Build
-        run: dotnet build SpaceBattleproject/SpaceBattle --no-restore /p:ContinuousIntegrationBuild=true
+        run: dotnet build spacebattle --no-restore /p:ContinuousIntegrationBuild=true
 
       - name: BDD test
-        run: cd SpaceBattleproject/SpaceBattleTests && dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+        run: cd spacebattletests && dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
