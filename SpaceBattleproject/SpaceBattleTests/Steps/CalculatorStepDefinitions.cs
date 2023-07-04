@@ -1,4 +1,3 @@
-namespace SpaceBattle.Tests;
 using SpaceBattle;
 using TechTalk.SpecFlow;
 
