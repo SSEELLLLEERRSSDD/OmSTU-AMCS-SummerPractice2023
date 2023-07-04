@@ -6,7 +6,7 @@ using SpaceBattle;
 namespace SpacebBattle.Tests.Steps
 {
     [Binding]
-    public sealed class SpaceBattle_TestsBDD
+    public sealed class SpaceBattle_Tests
     {
 
         private SpaceShip _spaceShip = new SpaceShip();
